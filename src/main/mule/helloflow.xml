@@ -10,6 +10,5 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	<flow name="helloflowFlow" doc:id="42530c6e-6852-40b8-a0f3-748d4ba37e3a" >
 		<http:listener doc:name="Listener" doc:id="1daf0e51-ff67-4af2-afa9-8e91a064a342" config-ref="HTTP_Listener_config" path="/hello"/>
 		<set-payload value="***** .........Hello World .....     *****" doc:name="Set Payload" doc:id="cf43c90f-12a2-43e3-9b59-8e3966b5ab00" />
-		<logger level="INFO" doc:name="Logger" doc:id="434c88bf-b69a-46c7-ad85-3fd63a460bbe" message="#[payload]"/>
 	</flow>
 </mule>
